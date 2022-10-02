@@ -1,11 +1,11 @@
-import { LightningElement, wire, track } from 'lwc';
+import { LightningElement, wire } from 'lwc';
 
 import { getPicklistValues } from 'lightning/uiObjectInfoApi';
 
 import COUNTRY_CODE from '@salesforce/schema/Account.BillingCountryCode';
 import BILLING_STATE_CODE from '@salesforce/schema/Account.BillingStateCode';
 
-export default class AddressSelector extends LightningElement {
+export default class CustomAddressSelector extends LightningElement {
     _countries = [];
     _countryToStates = {};
 
